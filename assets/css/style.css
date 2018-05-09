@@ -22,6 +22,13 @@ h1 {
     font-size: 50px;
 }
 
+#startButton {
+    padding: 30px 0 0 0;
+    color: white;
+    font-size: 15px;
+    
+}
+
 
 .startPage {
     margin: 0 auto;
@@ -157,11 +164,12 @@ h1 {
     margin: 10px 10px 70px 10px;
     background-image: url("../images/Arab.jpg");
     background: cover;
+
 }
 #timer {
     position: absolute;
-    left: 260px;
-    top: 10px;
+    left: 3000px;
+    top: 20px;
     width: 150px;
     height: 150px;
     font-size: 25px;
@@ -193,3 +201,4 @@ footer {
     height: 100px;
     width: 100%;
 }
+

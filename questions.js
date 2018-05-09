@@ -1,42 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<!--link to css-->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
-<!--link to javascript-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
-    
-    <title>TriviaGame</title>
-</head>
-
-<body>
-<main>
-    <header></header>
-    
-    <div class="startPage">
-            <h1>FAMOUS BUILDINGS<br> TRIVIA GAME</h1>
-    <div id="timer">
-        <div id="startButton">
-            <button type="button" onclick="">START</button>
-           </div>
-        <p></p>
-    </div>
-      
-    
-
-<div class="questionsContainer">
-
-        
-        
-<form name="quizform" onsubmit="return checkAnswers()">
+var questions = [{
     
     
-    <section class="flex-row" id="q1">        
+    var myQuestions = [
+        {
+          question: "1. Fallingwater, now a national landmark, was first built as a private residence by which architect?",
+          answers: {
+            a: "David Adler",
+            b: "Frank Lloyd Wright",
+            c: "Charles Eames",
+            d: "Isabel Roberts"
+          },
+          correctAnswer: "b"
+    },
+       {
+          question: "2. Name this famous museum",
+          answers: {
+            a: "Guggenheim Museum Bilbao",
+            b: "Royal Ontario Museum",
+            c: "Rosenthal Contemporary Aarts Center",
+            d: "Museum of Middle East Modern"
+          },
+          correctAnswer: "a"
+    },
+
+
+
+
+
+
+<section class="flex-row" id="q1">        
             <div class="photo">
                <div id="Box1"></div> 
             </div>
@@ -195,18 +187,3 @@
                 <input type="radio" name="q12" value="d" id=#q12d>d. Nice, France<br>
             </div>
         </section>
-        
-        <input type="submit" id="submit" value="Submit">  
-</form>
-
-</div>
-
-<div class="results"></div>
-
-<footer></footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/javascript/app.js"></script>
-</main>
-
-</body>
-</html>
